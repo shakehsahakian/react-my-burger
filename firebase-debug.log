@@ -1,14 +1,45 @@
-[debug] [2025-05-19T05:40:51.452Z] ----------------------------------------------------------------------
-[debug] [2025-05-19T05:40:51.455Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
-[debug] [2025-05-19T05:40:51.455Z] CLI Version:   14.4.0
-[debug] [2025-05-19T05:40:51.455Z] Platform:      win32
-[debug] [2025-05-19T05:40:51.455Z] Node Version:  v22.15.0
-[debug] [2025-05-19T05:40:51.455Z] Time:          Mon May 19 2025 09:10:51 GMT+0330 (Iran Standard Time)
-[debug] [2025-05-19T05:40:51.456Z] ----------------------------------------------------------------------
+[debug] [2025-05-20T04:51:21.775Z] ----------------------------------------------------------------------
+[debug] [2025-05-20T04:51:21.778Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --debug
+[debug] [2025-05-20T04:51:21.778Z] CLI Version:   14.4.0
+[debug] [2025-05-20T04:51:21.778Z] Platform:      win32
+[debug] [2025-05-20T04:51:21.778Z] Node Version:  v22.15.0
+[debug] [2025-05-20T04:51:21.778Z] Time:          Tue May 20 2025 08:21:21 GMT+0330 (Iran Standard Time)
+[debug] [2025-05-20T04:51:21.778Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2025-05-19T05:40:51.458Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2025-05-19T05:40:51.665Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2025-05-19T05:40:51.665Z] > authorizing via signed-in user (shake2005@gmail.com)
+[debug] [2025-05-20T04:51:21.781Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-05-20T04:51:21.981Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-20T04:51:21.983Z] > authorizing via signed-in user (shake2005@gmail.com)
+[debug] [2025-05-20T04:51:21.983Z] [iam] checking project react-my-burger-f1838 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-05-20T04:51:21.984Z] Checked if tokens are valid: true, expires at: 1747719636835
+[debug] [2025-05-20T04:51:21.992Z] Checked if tokens are valid: true, expires at: 1747719636835
+[debug] [2025-05-20T04:51:21.993Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-my-burger-f1838:testIamPermissions [none]
+[debug] [2025-05-20T04:51:21.993Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-my-burger-f1838:testIamPermissions x-goog-quota-user=projects/react-my-burger-f1838
+[debug] [2025-05-20T04:51:21.994Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-my-burger-f1838:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-05-20T04:51:22.058Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: Client network socket disconnected before secure TLS connection was established
+[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
+[debug] [2025-05-20T04:51:22.060Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2025-05-20T04:51:22.543Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-my-burger-f1838:testIamPermissions 403
+[debug] [2025-05-20T04:51:22.544Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/react-my-burger-f1838:testIamPermissions "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1/projects/react-my-burger-f1838:testIamPermissions</code> from this server.  <ins>That’s all we know.</ins>\n"
+[debug] [2025-05-20T04:51:22.560Z] [iam] error while checking permissions, command may fail: Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[debug] [2025-05-20T04:51:22.561Z] Checked if tokens are valid: true, expires at: 1747719636835
+[debug] [2025-05-20T04:51:22.562Z] Checked if tokens are valid: true, expires at: 1747719636835
+[debug] [2025-05-20T04:51:22.562Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-my-burger-f1838 [none]
+[debug] [2025-05-20T04:51:22.966Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-my-burger-f1838 403
+[debug] [2025-05-20T04:51:22.967Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-my-burger-f1838 "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1beta1/projects/react-my-burger-f1838</code> from this server.  <ins>That’s all we know.</ins>\n"
+[debug] [2025-05-20T04:51:22.987Z] Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2025-05-20T05:05:39.111Z] ----------------------------------------------------------------------
+[debug] [2025-05-20T05:05:39.114Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-05-20T05:05:39.115Z] CLI Version:   14.4.0
+[debug] [2025-05-20T05:05:39.115Z] Platform:      win32
+[debug] [2025-05-20T05:05:39.115Z] Node Version:  v22.15.0
+[debug] [2025-05-20T05:05:39.115Z] Time:          Tue May 20 2025 08:35:39 GMT+0330 (Iran Standard Time)
+[debug] [2025-05-20T05:05:39.115Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-20T05:05:39.118Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-05-20T05:05:39.319Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-20T05:05:39.319Z] > authorizing via signed-in user (shake2005@gmail.com)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -24,9 +55,9 @@ Before we get started, keep in mind:
 
   * You are initializing within an existing Firebase project directory
 
-[debug] [2025-05-19T05:40:51.847Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2025-05-20T05:05:39.508Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: read ECONNRESET
 [warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
-[debug] [2025-05-19T05:40:51.848Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2025-05-20T05:05:39.511Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
 [info] 
 === Project Setup
 [info] 
@@ -34,65 +65,63 @@ Before we get started, keep in mind:
 [info] You can create multiple project aliases by running firebase use --add, 
 [info] but for now we'll just set up a default project.
 [info] 
-[debug] [2025-05-19T05:40:53.951Z] Using project from CLI flag: react-my-burger-f1838
-[debug] [2025-05-19T05:40:53.951Z] Checked if tokens are valid: true, expires at: 1747635723203
-[debug] [2025-05-19T05:40:53.952Z] Checked if tokens are valid: true, expires at: 1747635723203
-[debug] [2025-05-19T05:40:53.952Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-my-burger-f1838 [none]
-[debug] [2025-05-19T05:40:54.376Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-my-burger-f1838 403
-[debug] [2025-05-19T05:40:54.376Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-my-burger-f1838 "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1beta1/projects/react-my-burger-f1838</code> from this server.  <ins>That’s all we know.</ins>\n"
-[debug] [2025-05-19T05:40:54.376Z] Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[debug] [2025-05-19T05:40:54.628Z] FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[debug] [2025-05-20T05:05:50.447Z] Using project from CLI flag: react-my-burger-f1838
+[debug] [2025-05-20T05:05:50.448Z] Checked if tokens are valid: true, expires at: 1747719636835
+[debug] [2025-05-20T05:05:50.448Z] Checked if tokens are valid: true, expires at: 1747719636835
+[debug] [2025-05-20T05:05:50.448Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-my-burger-f1838 [none]
+[debug] [2025-05-20T05:05:50.862Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-my-burger-f1838 403
+[debug] [2025-05-20T05:05:50.863Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-my-burger-f1838 "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1beta1/projects/react-my-burger-f1838</code> from this server.  <ins>That’s all we know.</ins>\n"
+[debug] [2025-05-20T05:05:50.863Z] Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[debug] [2025-05-20T05:05:51.117Z] FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
     at RetryOperation._fn (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:279:39)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 [error] 
 [error] Error: Failed to get Firebase project react-my-burger-f1838. Please make sure the project exists and your account has permission to access it.
-[debug] [2025-05-19T05:42:59.357Z] ----------------------------------------------------------------------
-[debug] [2025-05-19T05:42:59.360Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list
-[debug] [2025-05-19T05:42:59.361Z] CLI Version:   14.4.0
-[debug] [2025-05-19T05:42:59.361Z] Platform:      win32
-[debug] [2025-05-19T05:42:59.361Z] Node Version:  v22.15.0
-[debug] [2025-05-19T05:42:59.361Z] Time:          Mon May 19 2025 09:12:59 GMT+0330 (Iran Standard Time)
-[debug] [2025-05-19T05:42:59.361Z] ----------------------------------------------------------------------
+[debug] [2025-05-20T05:08:36.230Z] ----------------------------------------------------------------------
+[debug] [2025-05-20T05:08:36.232Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-05-20T05:08:36.233Z] CLI Version:   14.4.0
+[debug] [2025-05-20T05:08:36.233Z] Platform:      win32
+[debug] [2025-05-20T05:08:36.233Z] Node Version:  v22.15.0
+[debug] [2025-05-20T05:08:36.234Z] Time:          Tue May 20 2025 08:38:36 GMT+0330 (Iran Standard Time)
+[debug] [2025-05-20T05:08:36.234Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2025-05-19T05:42:59.364Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2025-05-19T05:42:59.564Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2025-05-19T05:42:59.564Z] > authorizing via signed-in user (shake2005@gmail.com)
-[debug] [2025-05-19T05:42:59.568Z] Checked if tokens are valid: true, expires at: 1747635723203
-[debug] [2025-05-19T05:42:59.568Z] Checked if tokens are valid: true, expires at: 1747635723203
-[debug] [2025-05-19T05:42:59.569Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
-[debug] [2025-05-19T05:42:59.717Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: Client network socket disconnected before secure TLS connection was established
+[debug] [2025-05-20T05:08:36.236Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-05-20T05:08:36.437Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-20T05:08:36.438Z] > authorizing via signed-in user (shake2005@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  G:\react\burgapp
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2025-05-20T05:08:36.652Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: read ECONNRESET
 [warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
-[debug] [2025-05-19T05:42:59.718Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
-[debug] [2025-05-19T05:43:00.002Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 403
-[debug] [2025-05-19T05:43:00.002Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
-[debug] [2025-05-19T05:43:00.002Z] Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[debug] [2025-05-19T05:43:00.270Z] FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[debug] [2025-05-20T05:08:36.653Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-05-20T05:08:43.860Z] Using project from CLI flag: react-my-burger-f1838
+[debug] [2025-05-20T05:08:43.860Z] Checked if tokens are valid: true, expires at: 1747719636835
+[debug] [2025-05-20T05:08:43.861Z] Checked if tokens are valid: true, expires at: 1747719636835
+[debug] [2025-05-20T05:08:43.861Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-my-burger-f1838 [none]
+[debug] [2025-05-20T05:08:44.498Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-my-burger-f1838 403
+[debug] [2025-05-20T05:08:44.498Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-my-burger-f1838 "<!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 403 (Forbidden)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}\n  </style>\n  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>\n  <p><b>403.</b> <ins>That’s an error.</ins>\n  <p>Your client does not have permission to get URL <code>/v1beta1/projects/react-my-burger-f1838</code> from this server.  <ins>That’s all we know.</ins>\n"
+[debug] [2025-05-20T05:08:44.499Z] Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+[debug] [2025-05-20T05:08:44.780Z] FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
     at RetryOperation._fn (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:279:39)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 [error] 
-[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
-[debug] [2025-05-19T05:47:57.963Z] ----------------------------------------------------------------------
-[debug] [2025-05-19T05:47:57.966Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list --debug
-[debug] [2025-05-19T05:47:57.966Z] CLI Version:   14.4.0
-[debug] [2025-05-19T05:47:57.966Z] Platform:      win32
-[debug] [2025-05-19T05:47:57.966Z] Node Version:  v22.15.0
-[debug] [2025-05-19T05:47:57.967Z] Time:          Mon May 19 2025 09:17:57 GMT+0330 (Iran Standard Time)
-[debug] [2025-05-19T05:47:57.967Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2025-05-19T05:47:57.969Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2025-05-19T05:47:58.168Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2025-05-19T05:47:58.169Z] > authorizing via signed-in user (shake2005@gmail.com)
-[debug] [2025-05-19T05:47:58.173Z] Checked if tokens are valid: true, expires at: 1747635723203
-[debug] [2025-05-19T05:47:58.181Z] Checked if tokens are valid: true, expires at: 1747635723203
-[debug] [2025-05-19T05:47:58.182Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
-[debug] [2025-05-19T05:47:58.336Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: Client network socket disconnected before secure TLS connection was established
-[warn] !  Unable to fetch the CLI MOTD and remote config. This is not a fatal error, but may indicate an issue with your network connection. 
-[debug] [2025-05-19T05:47:58.339Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
-[debug] [2025-05-19T05:47:58.696Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 403
-[debug] [2025-05-19T05:47:58.697Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
-[debug] [2025-05-19T05:47:58.698Z] Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-[debug] [2025-05-19T05:47:59.050Z] FirebaseError: Unable to parse JSON: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
-    at RetryOperation._fn (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:279:39)
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-[error] 
-[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[error] Error: Failed to get Firebase project react-my-burger-f1838. Please make sure the project exists and your account has permission to access it.

@@ -28,7 +28,7 @@ const store = createStore(
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const app = (
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename="/react-my-burger">
       <App />
     </BrowserRouter>
   </Provider>
